@@ -1,60 +1,43 @@
 # Experiment-4
 
-1.Basic Use of Bitwise Operators in C++
 
-This C++ program demonstrates the basic use of bitwise operators, which perform operations directly on the binary representations of integers.
+Aim  
+* To create a C++ program that demonstrates the basic use of bitwise operators.  
+* To set and reset a specific bit in a given number using bitwise operations.
 
-Bitwise Operators Used:
-& (AND)
+Apparatus  
+* Computer System (Laptop/Desktop)  
+* Standard Keyboard and Mouse  
+* Power Supply
 
-| (OR)
+Software Used  
+* Visual Studio Code  
+* GCC/G++ Compiler  
+* Terminal or Command Prompt
 
-^ (XOR)
+Theory  
+* Bitwise operators in C++ perform operations directly on the binary representations of integers.  
+* Common bitwise operators include AND (&), OR (|), XOR (^), NOT (~), Left Shift (<<), and Right Shift (>>).  
+* These operators are useful for low-level programming, performance optimization, and systems-level tasks.  
+* Setting a bit means turning a specific bit position to 1 without affecting other bits.  
+* Resetting a bit means turning a specific bit position to 0 while keeping other bits unchanged.  
+* To set the `n`th bit: use the expression `number | (1 << n)`.  
+* To reset the `n`th bit: use the expression `number & ~(1 << n)`.  
+* Bitwise operations are very fast and often used in embedded systems, cryptography, networking, and graphics.  
+* They help reduce memory usage by packing data efficiently using flags and bit fields.  
+* Understanding these operations enhances control over hardware-level data manipulation.  
+* These concepts are foundational for developing drivers, compilers, and performance-critical algorithms.  
+* Bitwise tricks are commonly asked in coding interviews and competitive programming.
 
-~ (NOT)
+Program Features  
+* Accepts an integer input from the user.  
+* Demonstrates how various bitwise operators modify the number.  
+* Allows the user to select a bit position to set or reset.  
+* Displays the updated binary and decimal result after each operation.  
+* Includes clear logic and step-by-step output for learning and verification.
 
-<< (Left Shift)
-
->> (Right Shift)
-
-What the Program Does:
-Takes two integer inputs from the user
-
-Applies each bitwise operator to the inputs
-
-Displays the results in both decimal and binary forms
-
-Educational Purpose:
-This program helps beginners understand how bit-level operations work in C++, which is useful for low-level programming, embedded systems, and performance optimization.
-
-2.Set and Reset a Specific Bit in C++
-
-This C++ program allows the user to set (turn ON) or reset (turn OFF) a specific bit in an integer.
-
-What the Program Does:
-
-Takes an integer number and a bit position as input
-
-Allows the user to choose:
-
-Set a bit → Uses bitwise OR: number | (1 << position)
-
-Reset a bit → Uses bitwise AND with NOT: number & ~(1 << position)
-
-Displays the new number after the bit operation
-
-Example:
-
-Input number: 10   (Binary: 00001010)
-Bit to set: 1      → Result: 10 (No change, already set)
-Bit to reset: 3    → Result: 2  (Binary: 00000010)
-
-Educational Purpose:
-
-This program teaches:
-
-How to manipulate individual bits
-
-Use of bitwise shift (<<) and logical operations
-
-Practical application in flags, masks, and hardware-level programming
+Conclusion  
+* The program was compiled and executed successfully using Visual Studio Code and GCC.  
+* It demonstrated clear use of bitwise operators for manipulating binary data.  
+* The operations to set and reset bits were performed using optimized expressions.  
+* This practical helped reinforce low-level data handling skills and the power of bitwise logic in C++.
